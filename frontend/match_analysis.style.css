@@ -1,0 +1,194 @@
+/* General Page Styling */
+body {
+	font-family: "Arial", sans-serif;
+	background-color: #121212;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.container {
+	max-width: 900px;
+	margin: 80px auto;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 28px;
+	color: #1abc9c;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+	font-size: 16px;
+	color: #ffffff88;
+	margin-bottom: 20px;
+}
+
+.analysis-container {
+	max-width: 800px;
+	background: rgba(255, 255, 255, 0.1);
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+	margin: 0 auto;
+}
+
+.credits-info {
+	background: rgba(255, 255, 255, 0.08);
+	padding: 10px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+}
+
+.credits-info p {
+	margin: 5px 0;
+	font-size: 14px;
+	color: #ffffffaa;
+}
+
+.drop-area {
+	border: 2px dashed #ffffff55;
+	border-radius: 10px;
+	padding: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.drop-area:hover {
+	border-color: #1abc9c;
+	background: rgba(255, 255, 255, 0.08);
+}
+
+.browse-btn {
+	color: #1abc9c;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.analyze-btn {
+	background: #1abc9c;
+	color: white;
+	border: none;
+	padding: 12px;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+	width: 100%;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.analyze-btn:hover {
+	background: #16a085;
+}
+
+.analyze-btn:disabled {
+	background: #666;
+	cursor: not-allowed;
+}
+
+.file-preview {
+	background: rgba(255, 255, 255, 0.08);
+	padding: 10px;
+	border-radius: 6px;
+}
+
+.results-container {
+	margin-top: 30px;
+	display: none;
+}
+
+.results-container h2 {
+	font-size: 22px;
+	margin-bottom: 10px;
+	color: #1abc9c;
+}
+
+.match-card {
+	background: rgba(255, 255, 255, 0.08);
+	padding: 15px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.3s;
+}
+
+.match-card:hover {
+	background: rgba(255, 255, 255, 0.12);
+}
+
+.match-score {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: white;
+	min-width: 50px;
+	text-align: center;
+}
+
+.high-match {
+	background: #e74c3c;
+}
+
+.medium-match {
+	background: #f39c12;
+}
+
+.low-match {
+	background: #2ecc71;
+}
+
+.loading {
+	display: none;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.loading-spinner {
+	border: 4px solid #f3f3f3;
+	border-top: 4px solid #1abc9c;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	animation: spin 2s linear infinite;
+	margin: 0 auto 10px;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 90%;
+	}
+
+	.drop-area {
+		padding: 20px;
+	}
+
+	.analyze-btn {
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	.match-card {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+}

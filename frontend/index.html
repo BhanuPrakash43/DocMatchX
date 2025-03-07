@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocMatchX - Login & Register</title>
+    <link rel="stylesheet" href="loginregisterpage.styles.css">
+
+</head>
+
+<body>
+    <div class="container" id="container">
+        <form class="form-container sign-in-container" id="signInForm">
+            <h2>Welcome Back 👋</h2>
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+
+            <button type="button" class="switch-to-signup" id="switchToSignUp">Don't have an account? Sign Up</button>
+        </form>
+
+        <form class="form-container sign-up-container" id="signUpForm">
+            <h2>Create an Account 🚀</h2>
+            <input type="text" id="regFullname" placeholder="Full Name" required>
+            <input type="email" id="regEmail" placeholder="Email" required>
+            <input type="password" id="regPassword" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+
+            <button type="button" class="switch-to-signin" id="switchToSignIn">Already have an account? Sign In</button>
+        </form>
+
+        <div class="toggle-container" id="toggleContainer">
+            <h2 style="color: white;">Welcome to DocMatchX</h2>
+            <p>Switch between Sign In and Sign Up</p>
+            <button id="toggleSignIn">Sign In</button>
+            <button id="toggleSignUp">Sign Up</button>
+        </div>
+    </div>
+
+    <script src="loginRegisterPage.js"></script>
+</body>
+
+</html>

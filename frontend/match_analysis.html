@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocMatchX - Document Analysis</title>
+    <link rel="stylesheet" href="match_analysis.style.css">
+
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="container">
+        <h1>Document Similarity Analysis</h1>
+        <p class="subtitle">Upload your text document to find matches in our database</p>
+
+        <div class="analysis-container">
+            <div class="credits-info">
+                <p>You have <span id="userCredits">--</span> credits remaining</p>
+                <p class="small">Each analysis uses 1 credit</p>
+            </div>
+
+            <div id="dropArea" class="drop-area">
+                <p>Drag & Drop a text file (.txt) here or <label for="fileInput" class="browse-btn">Browse</label></p>
+                <input type="file" id="fileInput" hidden accept=".txt">
+            </div>
+
+            <button id="analyzeBtn" class="analyze-btn" disabled>Analyze Document</button>
+
+            <div id="loading" class="loading">
+                <div class="loading-spinner"></div>
+                <p>Analyzing document... This may take a moment.</p>
+            </div>
+
+            <div id="resultsContainer" class="results-container">
+                <h2>Analysis Results</h2>
+                <div id="matchResults"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="matchAnalysis.js"></script>
+</body>
+
+</html>
